@@ -8,46 +8,58 @@
 </head>
 <style>
     body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Set the height of the body to the viewport height */
         background-color: black;
         font-size: 12px;
     }
+
     .image-center {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
     }
+
     .text-center {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
     }
+
     .btn {
-      border: none;
-      color: white;
-      padding: 10px 20px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      cursor: pointer;
-      border-radius: 15px;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 12px;
+        cursor: pointer;
+        border-radius: 15px;
     }
+
     .iyaa {
-      background-color: #258f33;
+        background-color: #258f33;
     }
+
     .gamau {
-      background-color: #c12b2b;
+        background-color: #c12b2b;
     }
+
     .dicenter {
         display: flex;
         justify-content: center;
     }
+
     .tricky {
-      position: absolute;
-      left: auto;
-      right: auto;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
   </style>
 </head>
@@ -70,7 +82,7 @@
     let iyaa = document.querySelector(".iyaa");
     let Gamau = document.querySelector(".tricky");
     iyaa.addEventListener("click", function() {
-        iyaa.style.display = "none";
+        // iyaa.style.display = "none";
         document.getElementById("image-alt").src = "https://media.tenor.com/W6R7KFBYwhMAAAAi/thank-you.gif";
         document.getElementById("text").innerHTML = "Maaaaaacihhh... 😘 ♥ ♥ ♥ ♥";
     });
