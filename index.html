@@ -23,11 +23,10 @@
       justify-content: center;
       color: white;
     }
-    .iyaa {
-      background-color: #258f33;
+    .btn {
       border: none;
       color: white;
-      padding: 15px 32px;
+      padding: 10px 20px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -35,17 +34,11 @@
       cursor: pointer;
       border-radius: 15px;
     }
+    .iyaa {
+      background-color: #258f33;
+    }
     .gamau {
       background-color: #c12b2b;
-      border: none;
-      color: white;
-      padding: 15px 32px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 12px;
-      cursor: pointer;
-      border-radius: 15px;
     }
     .dicenter {
         display: flex;
@@ -63,21 +56,21 @@
     <img src="https://media.tenor.com/JQylNRYWG9QAAAAi/sad.gif" alt="image" Id="image-alt" style="width: 180px;" />
   </div>
   <div class="text-center">
-    <h1 id="text" style="text-align: center;margin-top: 15px;">Nona nopikk.. Copet minta maaf yahh... 🥹 </h1>
+    <h1 id="text" style="text-align: center;margin-top: 20px;">Nona nopikk.. Copet minta maaf yahh... 🥹 </h1>
   </div>
   <div class="text-center">
-    <button type="button" class="iyaa" style="margin-top: 20px;">Iya Di Maafin</button>
+    <button type="button" class="btn iyaa" style="margin-top: 20px;">Iya Di Maafin</button>
   </div>
   <div class="dicenter">
-      <div class="tricky" style="text-align: center; margin-top: 40px;">
-        <button type="button" class="gamau" sty>Gamau</button>
+      <div class="tricky" style="text-align: center; margin-top: 15px;">
+        <button type="button" class="btn gamau">Gamau</button>
       </div>
   </div>
   <script>
     let iyaa = document.querySelector(".iyaa");
     let Gamau = document.querySelector(".tricky");
     iyaa.addEventListener("click", function() {
-        // iyaa.style.display = "none";
+        iyaa.style.display = "none";
         document.getElementById("image-alt").src = "https://media.tenor.com/W6R7KFBYwhMAAAAi/thank-you.gif";
         document.getElementById("text").innerHTML = "Maaaaaacihhh... 😘 ♥ ♥ ♥ ♥";
     });
