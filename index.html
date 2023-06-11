@@ -12,7 +12,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 90vh; /* Set the height of the body to the viewport height */
+        height: 90vh; 
         background-color: black;
         font-size: 12px;
     }
@@ -68,10 +68,10 @@
     <img src="https://media.tenor.com/JQylNRYWG9QAAAAi/sad.gif" alt="image" Id="image-alt" style="width: 180px;" />
   </div>
   <div class="text-center">
-    <h1 id="text" style="text-align: center;margin-top: 20px;font-size: 16px;">Nona nopikk.. Copet minta maaf yahh... 🥹 </h1>
+    <h1 id="text" style="text-align: center;margin-top: 20px; font-size: 16px;">Nona nopikk.. Copet minta maaf yahh... 🥹 </h1>
   </div>
   <div class="text-center">
-    <button type="button" class="btn iyaa" style="margin-top: 20px;">Iya Di Maafin</button>
+    <button type="button" class="btn iyaa" style="margin-top: 20px;">Iya di Maafin</button>
   </div>
   <div class="dicenter">
       <div class="tricky" style="text-align: center; margin-top: 15px;">
@@ -82,7 +82,10 @@
     let iyaa = document.querySelector(".iyaa");
     let Gamau = document.querySelector(".tricky");
     iyaa.addEventListener("click", function() {
-        // iyaa.style.display = "none";
+        iyaa.style.display = "none";
+        Gamau.style.left = "50%";
+        Gamau.style.top = "70%";
+        // Gamau.style.
         document.getElementById("image-alt").src = "https://media.tenor.com/W6R7KFBYwhMAAAAi/thank-you.gif";
         document.getElementById("text").innerHTML = "Maaaaaacihhh... 😘 ♥ ♥ ♥ ♥";
     });
